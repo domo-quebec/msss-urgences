@@ -14,7 +14,7 @@ Le format CSV se prête mal à l'interprétation des données et ce fichier plus
 
 Première étape, copiez le fichier "getmsssdata.py" sous le répertoire "/config/python_scripts/".
 
-Deuxième étape, ajouter le code du fichier [configuration.yaml](configuration.yaml) dans votre configuration. Prenez soin d'ajuster les valeurs sous " json_attributes" afin de refléter les régions pour lesquelles vous voulez extraire les données. Les régions possibles jusqu'à maintenant sont inscrites dans les tableaux plus bas. Dans le code ci-dessous, les régions 6, 13, 14, 15 et 99 sont indiquées.
+Deuxième étape, ajoutez le code du fichier [configuration.yaml](configuration.yaml) dans votre configuration. Prenez soin d'ajuster les valeurs sous " json_attributes" afin de refléter les régions pour lesquelles vous voulez extraire les données. Les régions possibles jusqu'à maintenant sont inscrites dans les tableaux plus bas. Dans le code ci-dessous, les régions 6, 13, 14, 15 et 99 sont indiquées.
 
 ```
 command_line:
@@ -127,7 +127,7 @@ Autre exemple pour un senseur du nombre de patients présent à l'urgence de l'�
       availability: "{{ state_attr('sensor.msss_etat_occupation_des_urgences', '02') is not none }}"
 ```
 
-Dernier exemple pour un senseur du nombre de patients sur civière pour plus de 48 heures à l'urgence de la région Ensemble du Québec. Région 99 Index 0.
+Dernier exemple pour un senseur du nombre de patients sur civières pour plus de 48 heures à l'urgence de la région Ensemble du Québec. Région 99 Index 0.
 
 ```
   - sensor:
