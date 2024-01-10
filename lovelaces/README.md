@@ -30,7 +30,7 @@ entities:
       - entity: sensor.msss_99_mise_a_jour
         name: Mise à jour
       - entity: sensor.msss_99_extraction
-        name: U+2668
+        name: Extraction
   - type: section
   - type: custom:multiple-entity-row
     entity: sensor.msss_13_cite_nom
