@@ -1,8 +1,8 @@
-# MSSS
+# MSSS Urgences
 
 **En développement, bienvenu aux contributions**
 
-Le ministère de la Santé et des Services sociaux publie plusieurs données.
+Le ministère de la Santé et des Services sociaux publie plusieurs données dont celles de l'états des urgenges.
 
 ## État d'occupation des urgences (horaire)
 
