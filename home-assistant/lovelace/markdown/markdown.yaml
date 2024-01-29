@@ -1,0 +1,46 @@
+type: markdown
+content: >-
+  ## **Occupation des urgences**
+
+
+  **{{ states('sensor.msss_99_region') }}**
+
+  - **Patients:** {{ states('sensor.msss_99_patient') }}
+
+  - **Patients en attente de PEC:** {{ states('sensor.msss_99_patient_pec') }}
+
+  - **Civieres occupees:** {{ states('sensor.msss_99_civieres_occupees') }}
+
+  - **Patients sur civiere +24h:** {{ states('sensor.msss_99_civieres_24h') }}
+
+  - **Patients sur civiere 48h+:** {{ states('sensor.msss_99_civieres_48h') }}
+
+  - **Duree moyenne de sejour (DMS):** {{ states('sensor.msss_99_patient_dms')
+  }}
+
+
+  - **Mise a jour:** {{ states('sensor.msss_99_mise_a_jour') }}
+
+
+  **{{ states('sensor.msss_06_maisonneuve_rosemont_nom') }}**
+
+  - **Patients:** {{ states('sensor.msss_06_maisonneuve_rosemont_patient') }}
+
+  - **Patients en attente de PEC:** {{
+  states('sensor.msss_06_maisonneuve_rosemont_patient_pec') }}
+
+  - **Civieres occupees:** {{
+  states('sensor.msss_06_maisonneuve_rosemont_civieres_occupees') }}
+
+  - **Patients sur civiere +24h:** {{
+  states('sensor.msss_06_maisonneuve_rosemont_civieres_24h') }}
+
+  - **Patients sur civiere 48h+:** {{
+  states('sensor.msss_06_maisonneuve_rosemont_civieres_48h') }}
+
+  - **Duree moyenne de sejour (DMS):** {{
+  states('sensor.msss_06_maisonneuve_rosemont_patient_dms') }}
+
+
+  - **Mise a jour:** {{
+  states('sensor.msss_06_maisonneuve_rosemont_mise_a_jour') }}
