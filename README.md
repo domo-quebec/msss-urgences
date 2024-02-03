@@ -31,7 +31,7 @@ homeassistant:
 
 Le dossier [home-assistant/packages](home-assistant/packages) contient un fichier nommé `msss.yaml` qui doit être déplacé dans le dossier "packages" de votre installation Home-Assistant.
 
-Ensuite, copiez le fichier [scripts/getmsssdata.py](donnees/scripts/getmsssdata.py) sous le répertoire `scripts/`. Il sera peut-être nécessaire de créer le répertoire (dossier) `scripts/`.
+Ensuite, copiez le fichier [scripts/getmsssdata.py](scripts/getmsssdata.py) sous le répertoire `scripts/`. Il sera peut-être nécessaire de créer le répertoire (dossier) `scripts/`.
 
 #### Configuration
 Premièrement, dans le fichier `msss.yaml` remplacer les valeurs `REGION`, par les valeurs de région disponible dans le fichier [list.md](list.md). Il est possible de rajouter des régions en ajoutant `- "<REGION ID>"` sous `json_attributes:`.
