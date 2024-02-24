@@ -1,0 +1,74 @@
+type: entities
+title: Hopitaux - Urgences
+entities:
+  - type: section
+  - type: custom:multiple-entity-row
+    entity: sensor.msss_06_justine_nom
+    name: Ste-Justine
+    icon: mdi:hospital-building
+    show_state: false
+    secondary_info: last-changed
+    entities:
+      - entity: sensor.msss_06_justine_patient
+        name: Patient
+      - entity: sensor.msss_06_justine_patient_pec
+        name: X-PEC
+      - entity: sensor.msss_06_justine_patient_dms
+        name: DMS
+      - entity: sensor.msss_06_justine_civieres_occupees
+        name: Civ
+      - entity: sensor.msss_06_justine_civieres_24h
+        name: 24h
+      - entity: sensor.msss_06_justine_civieres_48h
+        name: 48h
+      - entity: sensor.msss_06_justine_civieres_dms
+        name: C-DMS
+  - type: section
+  - type: custom:multiple-entity-row
+    entity: sensor.msss_06_children_nom
+    name: Children
+    icon: mdi:hospital-building
+    show_state: false
+    secondary_info: last-changed
+    entities:
+      - entity: sensor.msss_06_children_patient
+        name: Patient
+      - entity: sensor.msss_06_children_patient_pec
+        name: X-PEC
+      - entity: sensor.msss_06_children_patient_dms
+        name: DMS
+      - entity: sensor.msss_06_children_civieres_occupees
+        name: Civ
+      - entity: sensor.msss_06_children_civieres_24h
+        name: 24h
+      - entity: sensor.msss_06_children_civieres_48h
+        name: 48h
+      - entity: sensor.msss_06_children_civieres_dms
+        name: C-DMS
+  - type: section
+  - type: custom:multiple-entity-row
+    entity: sensor.msss_99_region
+    name: Ensemble du Québec
+    icon: mdi:heart
+    show_state: false
+  - type: section
+  - type: custom:multiple-entity-row
+    entity: sensor.msss_99_nom
+    name: Province
+    icon: mdi:hospital-building
+    show_state: false
+    entities:
+      - entity: sensor.msss_99_patient
+        name: Patient
+      - entity: sensor.msss_99_patient_pec
+        name: X-PEC
+      - entity: sensor.msss_99_patient_dms
+        name: DMS
+      - entity: sensor.msss_99_civieres_occupees
+        name: Civ
+      - entity: sensor.msss_99_civieres_24h
+        name: 24h
+      - entity: sensor.msss_99_civieres_48h
+        name: 48h
+      - entity: sensor.msss_99_civieres_dms
+        name: C-DMS
